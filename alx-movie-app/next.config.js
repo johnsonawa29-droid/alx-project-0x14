@@ -1,13 +1,18 @@
+import withPWAInit from "@ducanh2912/next-pwa";
+
 /** @type {import('next').NextConfig} */
-const withPWA = require('@ducanh2912/next-pwa').default({
-  dest: 'public',              // where to output the service worker
-  register: true,              // auto-register the service worker
-  skipWaiting: true,           // activate SW immediately after update
-  disable: process.env.NODE_ENV === 'development', // disable PWA in dev mode
-});
+
+const withPWA = withPWAInit({
+  dest: 'public'
+})
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ['m.media-amazon.com'],
+  },
 };
 
-module.exports = withPWA(nextConfig);
+export default withPWA({
+  ...nextConfig
+})
