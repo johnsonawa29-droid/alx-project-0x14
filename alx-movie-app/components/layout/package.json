@@ -1,8 +1,13 @@
-"dependencies": {
-  "@fortawesome/fontawesome-svg-core": "^6.6.0",
-  "@fortawesome/free-brands-svg-icons": "^6.6.0",
-  "@fortawesome/react-fontawesome": "^0.2.0",
-  "next": "14.x.x",
-  "react": "18.x.x",
-  "react-dom": "18.x.x"
+{
+  "name": "alx-movie-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "next": "14.x",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "webpack": "^5.94.0"
+  }
 }
