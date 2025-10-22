@@ -3,7 +3,12 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        {/* Link to the PWA manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        {/* Set the theme color for address bar / OS integration */}
+        <meta name="theme-color" content="#0070f3" />
+      </Head>
       <body className="antialiased">
         <Main />
         <NextScript />
